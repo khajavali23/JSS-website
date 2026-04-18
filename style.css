@@ -1,6 +1,6 @@
 /* ----------------------------------
 
-Template Name: MediHub - Medical & Health Template
+Template Name: JSS - Medical & Health Template
 Author: validtheme
 Description:
 Version: 2.0
@@ -60,7 +60,7 @@ Table of contents
 	--dark: #14457b;
 	--dark-secondary: #0d3c6f;
 	--white: #ffffff;
-	--color-primary: #0cb8b6;
+	--color-primary: #15abb9;
 	--color-secondary: #07d9d6;
 	--color-heading: #04000b;
 	--color-paragraph: #666666;
@@ -7237,4 +7237,18 @@ footer .footer-bottom .social li a:hover {
   z-index: 999999;
   background: url(assets/img/preloader.gif) center no-repeat #fff;
   text-align: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.3)
+    );
+    z-index: 1;
 }

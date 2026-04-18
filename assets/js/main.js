@@ -1,7 +1,7 @@
 /* ===================================================================
     
     Author          : Valid Theme
-    Template Name   : MediHub - Medical & Health Template
+    Template Name   : JSS - Medical & Health Template
     Version         : 1.1
     
 * ================================================================= */
