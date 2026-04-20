@@ -26,13 +26,6 @@
         <link href="style.css" rel="stylesheet" />
         <link href="assets/css/responsive.css" rel="stylesheet" />
         <!-- ========== End Stylesheet ========== -->
-
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">
-                You are using an <strong>outdated</strong> browser. Please
-                <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
-            </p>
-        <![endif]-->
     </head>
 
     <body>
@@ -91,6 +84,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="gallery.html">Gallery</a></li>
                                     <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="health-checkup.html">Health Checkup</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -129,74 +123,46 @@
 
         <!-- Start Banner 
     ============================================= -->
-        <div class="banner-area banner-style-two responsive-auto-height text-small">
-            <div class="item shadow theme text-light bg-fixed" style="position: relative; overflow: hidden">
-                <!-- Background Video -->
-                <video
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0"
-                >
-                    <source src="assets/img/banner/4.webm" type="video/webm" />
-                </video>
-
-                <!-- Black Overlay -->
-                <div class="banner-overlay"></div>
-
-                <!-- Content -->
-                <div class="box-table" style="position: relative; z-index: 2">
-                    <div class="box-cell">
-                        <div class="container">
-                            <div class="row">
-                                <div class="content double-items">
-                                    <div class="col-lg-7">
-                                        <h1 class="wow fadeInUp">Best care for your <span>Good health</span></h1>
-                                        <p class="wow fadeInUp" data-wow-delay="300ms">
-                                            The ourselves suffering the sincerity. Inhabit her manners adapted age
-                                            certain.
-                                        </p>
-                                        <a
-                                            class="btn btn-md circle btn-light animation wow fadeInUp"
-                                            data-wow-delay="500ms"
-                                            href="contact.html"
-                                        >
-                                            Contact Us
-                                        </a>
-                                        
-                                    </div>
-
-                                    <div class="col-lg-5 appoinment">
-                                        <div class="appoinment-box">
-                                            <div class="heading">
-                                                <h2>Make an Appointment</h2>
+        <div class="banner-area banner-style-six animate-text">
+            <div id="bootcarousel" class="carousel slide carousel-fade animate_text" data-bs-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner text-light carousel-zoom">
+                    <div class="carousel-item active">
+                        <div class="slider-thumb bg-cover" style="background-image: url(assets/img/banner/4.jpg)"></div>
+                        <div class="box-table shadow dark">
+                            <div class="box-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="content">
+                                                <h4>Best Service Good health</h4>
+                                                <h1 data-animation="animated slideInRight">
+                                                    Expert <span>medical care</span> for good health
+                                                </h1>
+                                                <a class="btn btn-md btn-theme animation" href="contact.html"
+                                                    >Contact Us</a
+                                                >
                                             </div>
-                                            <form action="#">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <input class="form-control" placeholder="Name" type="text" />
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option>Male</option>
-                                                            <option>Female</option>
-                                                            <option>Child</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option>Department</option>
-                                                            <option>Medicine</option>
-                                                            <option>Dental Care</option>
-                                                            <option>Traumatology</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <button type="submit">Submit Query</button>
-                                                    </div>
-                                                </div>
-                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-thumb bg-cover" style="background-image: url(assets/img/banner/4.jpg)"></div>
+                        <div class="box-table shadow dark">
+                            <div class="box-cell">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="content">
+                                                <h4>Best Service Good health</h4>
+                                                <h1>Special for <span>expert</span> heart specialist</h1>
+                                                <a class="btn btn-md btn-theme animation" href="contact.html"
+                                                    >Contact Us</a
+                                                >
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -204,490 +170,194 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Wrapper for slides -->
+
+                <!-- Left and right controls -->
+                <button
+                    class="carousel-control-prev carousel-control left"
+                    type="button"
+                    data-bs-target="#bootcarousel"
+                    data-bs-slide="prev"
+                >
+                    <i class="fa fa-angle-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next carousel-control right"
+                    type="button"
+                    data-bs-target="#bootcarousel"
+                    data-bs-slide="next"
+                >
+                    <i class="fa fa-angle-right"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
         <!-- End Banner -->
 
         <!-- Start Departments
     ============================================= -->
-        <div class="department-tabs default-padding">
+        <div class="features-area default-padding bg-gray">
             <div class="container">
-                –
-                <div class="row">
-                    <div class="col-lg-3 tab-navs">
-                        <div class="heading">
-                            <h4>Our Departments</h4>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 appoinment">
+                        <div class="appoinment-box">
+                            <div class="heading">
+                                <h4>Online Appoinment</h4>
+                                <h2>Make an Appointment</h2>
+                            </div>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input
+                                                class="form-control"
+                                                id="f-name"
+                                                name="f-name"
+                                                placeholder="First Name"
+                                                type="text"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input
+                                                class="form-control"
+                                                id="l-lname"
+                                                name="l-lname"
+                                                placeholder="Last Name"
+                                                type="text"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input
+                                                class="form-control"
+                                                id="phone"
+                                                name="phone"
+                                                placeholder="Phone"
+                                                type="text"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input
+                                                class="form-control"
+                                                id="date"
+                                                name="date"
+                                                placeholder="Appoinment Date"
+                                                type="text"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <select style="display: none">
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                                <option value="3">Child</option>
+                                            </select>
+                                            <div class="nice-select" tabindex="0">
+                                                <span class="current">Male</span>
+                                                <ul class="list">
+                                                    <li data-value="1" class="option selected">Male</li>
+                                                    <li data-value="2" class="option">Female</li>
+                                                    <li data-value="3" class="option">Child</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <select style="display: none">
+                                                <option value="1">Department</option>
+                                                <option value="2">Medecine</option>
+                                                <option value="4">Dental Care</option>
+                                                <option value="5">Traumatology</option>
+                                            </select>
+                                            <div class="nice-select" tabindex="0">
+                                                <span class="current">Department</span>
+                                                <ul class="list">
+                                                    <li data-value="1" class="option selected">Department</li>
+                                                    <li data-value="2" class="option">Medecine</li>
+                                                    <li data-value="4" class="option">Dental Care</li>
+                                                    <li data-value="5" class="option">Traumatology</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group comments">
+                                            <textarea
+                                                class="form-control"
+                                                id="comments"
+                                                name="comments"
+                                                placeholder="Tell Us About Project *"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button type="submit" name="submit" id="submit">
+                                            Submit Query <i class="fa fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <!-- Tab Nav -->
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link active"
-                                    id="tabs_1"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#tab_1"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="tab_1"
-                                    aria-selected="true"
-                                >
-                                    Medecine and Health
-                                </button>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 features-items">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="flaticon-tooth"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Advanced Technology</h4>
+                                    <p>
+                                        Principle oh explained excellent do my suspected conveying in. Excellent you did
+                                        therefore perfect.
+                                    </p>
+                                </div>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link"
-                                    id="tabs_2"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#tab_2"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="tab_2"
-                                    aria-selected="false"
-                                >
-                                    Dental Care and Surgery
-                                </button>
+                            <li>
+                                <div class="icon">
+                                    <i class="flaticon-medicine"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Healthcare Solutions</h4>
+                                    <p>
+                                        Principle oh explained excellent do my suspected conveying in. Excellent you did
+                                        therefore perfect.
+                                    </p>
+                                </div>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link"
-                                    id="tabs_3"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#tab_3"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="tab_3"
-                                    aria-selected="false"
-                                >
-                                    Eye Treatment
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link"
-                                    id="tabs_4"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#tab_4"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="tab_4"
-                                    aria-selected="true"
-                                >
-                                    Children Chare
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link"
-                                    id="tabs_5"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#tab_5"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="tab_5"
-                                    aria-selected="false"
-                                >
-                                    Nuclear magnetic
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link"
-                                    id="tabs_6"
-                                    data-bs-toggle="tab"
-                                    data-bs-target="#tab_6"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="tab_6"
-                                    aria-selected="false"
-                                >
-                                    Traumatology
-                                </button>
+                            <li>
+                                <div class="icon">
+                                    <i class="flaticon-24-hours"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>24/7 Availability</h4>
+                                    <p>
+                                        Principle oh explained excellent do my suspected conveying in. Excellent you did
+                                        therefore perfect.
+                                    </p>
+                                </div>
                             </li>
                         </ul>
-                        <!-- End Tab Nav -->
-                    </div>
-                    <div class="col-lg-9 tab-contents">
-                        <div class="row">
-                            <!-- Start Tab Content -->
-                            <div class="tab-content" id="myTabContent">
-                                <div
-                                    class="tab-pane fade show active"
-                                    id="tab_1"
-                                    role="tabpanel"
-                                    aria-labelledby="tabs_1"
+                        <div class="bottom">
+                            <div class="video">
+                                <a
+                                    href="https://www.youtube.com/watch?v=5vY-D42NFP4"
+                                    class="popup-youtube relative theme video-play-button item-center"
                                 >
-                                    <div class="row">
-                                        <!-- Start Department Info -->
-                                        <div class="col-lg-6">
-                                            <div class="info title">
-                                                <div class="thumb">
-                                                    <img src="assets/img/departments/ambulance.gif" alt="Thumb" />
-                                                </div>
-                                                <h3>Medecine and Health</h3>
-                                                <p>
-                                                    Calling nothing end fertile for venture way boy. Esteem spirit
-                                                    temper too say adieus who direct esteem. It esteems luckily mr or
-                                                    picture placing drawing no. Apartments frequently or motionless on
-                                                    reasonable projecting expression.
-                                                </p>
-                                                <p>
-                                                    Placing assured be if removed it besides on. Far shed each high read
-                                                    are men over day.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- End Department Info -->
-
-                                        <!-- Start Opening Hours -->
-                                        <div class="col-lg-6 opening-hours">
-                                            <div class="opening-info">
-                                                <h4>Opening Hours</h4>
-                                                <ul>
-                                                    <li>
-                                                        Sunday
-                                                        <div class="pull-right">6.00 am - 10.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Monday
-                                                        <div class="pull-right">8.00 am - 4.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Tuesday
-                                                        <div class="pull-right">9.00 am - 6.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Wednesday
-                                                        <div class="pull-right">10.00 am - 7.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Thursday
-                                                        <div class="pull-right">11.00 am - 9.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Friday
-                                                        <div class="pull-right">12.00 am - 12.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Saturday
-                                                        <div class="pull-right closed">Closed</div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- End Opening Hours -->
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="tab_2" role="tabpanel" aria-labelledby="tabs_2">
-                                    <div class="row">
-                                        <!-- Start Department Info -->
-                                        <div class="col-lg-6">
-                                            <div class="info title">
-                                                <div class="thumb">
-                                                    <img src="assets/img/departments/ambulance.gif" alt="Thumb" />
-                                                </div>
-                                                <h3>Dental Care and Surgery</h3>
-                                                <p>
-                                                    Calling nothing end fertile for venture way boy. Esteem spirit
-                                                    temper too say adieus who direct esteem. It esteems luckily mr or
-                                                    picture placing drawing no. Apartments frequently or motionless on
-                                                    reasonable projecting expression.
-                                                </p>
-                                                <p>
-                                                    Placing assured be if removed it besides on. Far shed each high read
-                                                    are men over day.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- End Department Info -->
-
-                                        <!-- Start Opening Hours -->
-                                        <div class="col-lg-6 opening-hours">
-                                            <div class="opening-info">
-                                                <h4>Opening Hours</h4>
-                                                <ul>
-                                                    <li>
-                                                        Sunday
-                                                        <div class="pull-right">6.00 am - 10.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Monday
-                                                        <div class="pull-right">8.00 am - 4.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Tuesday
-                                                        <div class="pull-right">9.00 am - 6.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Wednesday
-                                                        <div class="pull-right">10.00 am - 7.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Thursday
-                                                        <div class="pull-right">11.00 am - 9.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Friday
-                                                        <div class="pull-right">12.00 am - 12.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Saturday
-                                                        <div class="pull-right closed">Closed</div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- End Opening Hours -->
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="tab_3" role="tabpanel" aria-labelledby="tabs_3">
-                                    <div class="row">
-                                        <!-- Start Department Info -->
-                                        <div class="col-lg-6">
-                                            <div class="info title">
-                                                <div class="thumb">
-                                                    <img src="assets/img/departments/ambulance.gif" alt="Thumb" />
-                                                </div>
-                                                <h3>Eye Treatment</h3>
-                                                <p>
-                                                    Calling nothing end fertile for venture way boy. Esteem spirit
-                                                    temper too say adieus who direct esteem. It esteems luckily mr or
-                                                    picture placing drawing no. Apartments frequently or motionless on
-                                                    reasonable projecting expression.
-                                                </p>
-                                                <p>
-                                                    Placing assured be if removed it besides on. Far shed each high read
-                                                    are men over day.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- End Department Info -->
-
-                                        <!-- Start Opening Hours -->
-                                        <div class="col-lg-6 opening-hours">
-                                            <div class="opening-info">
-                                                <h4>Opening Hours</h4>
-                                                <ul>
-                                                    <li>
-                                                        Sunday
-                                                        <div class="pull-right">6.00 am - 10.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Monday
-                                                        <div class="pull-right">8.00 am - 4.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Tuesday
-                                                        <div class="pull-right">9.00 am - 6.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Wednesday
-                                                        <div class="pull-right">10.00 am - 7.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Thursday
-                                                        <div class="pull-right">11.00 am - 9.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Friday
-                                                        <div class="pull-right">12.00 am - 12.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Saturday
-                                                        <div class="pull-right closed">Closed</div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- End Opening Hours -->
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="tab_4" role="tabpanel" aria-labelledby="tabs_4">
-                                    <div class="row">
-                                        <!-- Start Department Info -->
-                                        <div class="col-lg-6">
-                                            <div class="info title">
-                                                <div class="thumb">
-                                                    <img src="assets/img/departments/ambulance.gif" alt="Thumb" />
-                                                </div>
-                                                <h3>Children Chare</h3>
-                                                <p>
-                                                    Calling nothing end fertile for venture way boy. Esteem spirit
-                                                    temper too say adieus who direct esteem. It esteems luckily mr or
-                                                    picture placing drawing no. Apartments frequently or motionless on
-                                                    reasonable projecting expression.
-                                                </p>
-                                                <p>
-                                                    Placing assured be if removed it besides on. Far shed each high read
-                                                    are men over day.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- End Department Info -->
-
-                                        <!-- Start Opening Hours -->
-                                        <div class="col-lg-6 opening-hours">
-                                            <div class="opening-info">
-                                                <h4>Opening Hours</h4>
-                                                <ul>
-                                                    <li>
-                                                        Sunday
-                                                        <div class="pull-right">6.00 am - 10.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Monday
-                                                        <div class="pull-right">8.00 am - 4.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Tuesday
-                                                        <div class="pull-right">9.00 am - 6.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Wednesday
-                                                        <div class="pull-right">10.00 am - 7.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Thursday
-                                                        <div class="pull-right">11.00 am - 9.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Friday
-                                                        <div class="pull-right">12.00 am - 12.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Saturday
-                                                        <div class="pull-right closed">Closed</div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- End Opening Hours -->
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="tab_5" role="tabpanel" aria-labelledby="tabs_5">
-                                    <div class="row">
-                                        <!-- Start Department Info -->
-                                        <div class="col-lg-6">
-                                            <div class="info title">
-                                                <div class="thumb">
-                                                    <img src="assets/img/departments/ambulance.gif" alt="Thumb" />
-                                                </div>
-                                                <h3>Nuclear magnetic</h3>
-                                                <p>
-                                                    Calling nothing end fertile for venture way boy. Esteem spirit
-                                                    temper too say adieus who direct esteem. It esteems luckily mr or
-                                                    picture placing drawing no. Apartments frequently or motionless on
-                                                    reasonable projecting expression.
-                                                </p>
-                                                <p>
-                                                    Placing assured be if removed it besides on. Far shed each high read
-                                                    are men over day.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- End Department Info -->
-
-                                        <!-- Start Opening Hours -->
-                                        <div class="col-lg-6 opening-hours">
-                                            <div class="opening-info">
-                                                <h4>Opening Hours</h4>
-                                                <ul>
-                                                    <li>
-                                                        Sunday
-                                                        <div class="pull-right">6.00 am - 10.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Monday
-                                                        <div class="pull-right">8.00 am - 4.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Tuesday
-                                                        <div class="pull-right">9.00 am - 6.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Wednesday
-                                                        <div class="pull-right">10.00 am - 7.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Thursday
-                                                        <div class="pull-right">11.00 am - 9.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Friday
-                                                        <div class="pull-right">12.00 am - 12.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Saturday
-                                                        <div class="pull-right closed">Closed</div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- End Opening Hours -->
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="tab_6" role="tabpanel" aria-labelledby="tabs_6">
-                                    <div class="row">
-                                        <!-- Start Department Info -->
-                                        <div class="col-lg-6">
-                                            <div class="info title">
-                                                <div class="thumb">
-                                                    <img src="assets/img/departments/ambulance.gif" alt="Thumb" />
-                                                </div>
-                                                <h3>Traumatology</h3>
-                                                <p>
-                                                    Calling nothing end fertile for venture way boy. Esteem spirit
-                                                    temper too say adieus who direct esteem. It esteems luckily mr or
-                                                    picture placing drawing no. Apartments frequently or motionless on
-                                                    reasonable projecting expression.
-                                                </p>
-                                                <p>
-                                                    Placing assured be if removed it besides on. Far shed each high read
-                                                    are men over day.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- End Department Info -->
-
-                                        <!-- Start Opening Hours -->
-                                        <div class="col-lg-6 opening-hours">
-                                            <div class="opening-info">
-                                                <h4>Opening Hours</h4>
-                                                <ul>
-                                                    <li>
-                                                        Sunday
-                                                        <div class="pull-right">6.00 am - 10.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Monday
-                                                        <div class="pull-right">8.00 am - 4.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Tuesday
-                                                        <div class="pull-right">9.00 am - 6.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Wednesday
-                                                        <div class="pull-right">10.00 am - 7.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Thursday
-                                                        <div class="pull-right">11.00 am - 9.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Friday
-                                                        <div class="pull-right">12.00 am - 12.00 pm</div>
-                                                    </li>
-                                                    <li>
-                                                        Saturday
-                                                        <div class="pull-right closed">Closed</div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- End Opening Hours -->
-                                    </div>
-                                </div>
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4>Intro video</h4>
+                                <p>If your smile is not becoming to you, then you should be coming to me!</p>
                             </div>
                         </div>
                     </div>
@@ -696,55 +366,160 @@
         </div>
         <!-- End Departments -->
 
+        <div class="chose-us-area">
+            <div class="container-full">
+                <div class="row">
+                    <div class="col-lg-6 thumb bg-cover" style="background-image: url(assets/img/banner/7.jpg)"></div>
+                    <div class="col-lg-6 pl-80 pl-md-15 pl-xs-15 info">
+                        <div class="heading">
+                            <h4 class="sub-title">Why Chose us</h4>
+                            <h2 class="title">Best medical &amp; health care services</h2>
+                            <p>
+                                Offering confined entrance no. Nay rapturous him see something residence. Highly talked
+                                do so vulgar. Her use behaved spirits and natural attempt say feeling. Exquisite mr
+                                incommode immediate he something ourselves it of. Law conduct yet chiefly beloved.
+                            </p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="info">
+                                    <h4>Qualified facilities</h4>
+                                    <p>
+                                        Consider may dwelling old him her surprise finished families graceful. Gave led
+                                        past poor met fine was new.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <h4>Dedicated patient care</h4>
+                                    <p>
+                                        Consider may dwelling old him her surprise finished families graceful. Gave led
+                                        past poor met fine was new.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Start Services
     ============================================= -->
-        <div
-            class="services-area inc-icon less-info text-light default-padding bottom-less bg-cover"
-            style="background-image: url(assets/img/shape/1.jpg)"
-        >
+        <div class="services-area inc-icon bg-gray carousel-shadow default-padding bottom-less">
             <div class="container">
-                <div class="services-items text-center">
-                    <div class="row">
-                        <!-- Single Item -->
-                        <div class="col-lg-3 col-md-6 equal-height">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading text-center">
+                            <h2>Our <span>Specialties</span></h2>
+                            <p>
+                                Comprehensive healthcare services with experienced doctors and advanced medical
+                                facilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="services-items text-center services-carousel owl-carousel owl-theme">
                             <div class="item">
-                                <a href="index.html">
-                                    <i class="flaticon-doctor-1"></i>
-                                    <h4>Advanced Care</h4>
-                                </a>
+                                <div class="info">
+                                    <h4><a href="#">Cardiology</a></h4>
+                                    <div class="overlay">
+                                        <i class="flaticon-anatomy"></i>
+                                    </div>
+                                    <p>
+                                        Advanced heart care with modern diagnostic tools and experienced cardiologists
+                                        ensuring accurate treatment and patient safety.
+                                    </p>
+                                    <a class="btn btn-border theme circle btn-md" href="services-details.html"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <h4><a href="#">Orthopedics</a></h4>
+                                    <div class="overlay">
+                                        <i class="flaticon-lung-cancer"></i>
+                                    </div>
+                                    <p>
+                                        Comprehensive treatment for bone, joint, and spine conditions including
+                                        fractures, arthritis, and sports injuries.
+                                    </p>
+                                    <a class="btn btn-border theme circle btn-md" href="services-details.html"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <h4><a href="#">Neurology</a></h4>
+                                    <div class="overlay">
+                                        <i class="flaticon-thinking"></i>
+                                    </div>
+                                    <p>
+                                        Specialized care for brain and nervous system disorders with advanced technology
+                                        and expert medical support.
+                                    </p>
+                                    <a class="btn btn-border theme circle btn-md" href="services-details.html"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <h4><a href="#">Pediatrics</a></h4>
+                                    <div class="overlay">
+                                        <i class="flaticon-medical"></i>
+                                    </div>
+                                    <p>
+                                        Dedicated healthcare services for infants and children focusing on growth,
+                                        development, and preventive care.
+                                    </p>
+                                    <a class="btn btn-border theme circle btn-md" href="services-details.html"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <h4><a href="#">Gynecology & Obstetrics</a></h4>
+                                    <div class="overlay">
+                                        <i class="flaticon-anesthesia"></i>
+                                    </div>
+                                    <p>
+                                        Complete women’s healthcare including pregnancy care, safe delivery, and
+                                        treatment for gynecological conditions.
+                                    </p>
+                                    <a class="btn btn-border theme circle btn-md" href="services-details.html"
+                                        >Read More</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="info">
+                                    <h4><a href="#">General Medicine</a></h4>
+                                    <div class="overlay">
+                                        <i class="flaticon-anatomy"></i>
+                                    </div>
+                                    <p>
+                                        Diagnosis and treatment of common illnesses with focus on preventive care and
+                                        long-term health management.
+                                    </p>
+                                    <a class="btn btn-border theme circle btn-md" href="services-details.html"
+                                        >Read More</a
+                                    >
+                                </div>
                             </div>
                         </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="col-lg-3 col-md-6 equal-height">
-                            <div class="item">
-                                <a href="index.html">
-                                    <i class="flaticon-medicine"></i>
-                                    <h4>Respite Care</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="col-lg-3 col-md-6 equal-height">
-                            <div class="item">
-                                <a href="index.html">
-                                    <i class="flaticon-checkup"></i>
-                                    <h4>Daily Care</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="col-lg-3 col-md-6 equal-height">
-                            <div class="item">
-                                <a href="index.html">
-                                    <i class="flaticon-neurology"></i>
-                                    <h4>Neuorology Care</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
                     </div>
                 </div>
             </div>
@@ -753,7 +528,7 @@
 
         <!-- Start Doctors 
     ============================================= -->
-        <div class="doctor-area bg-gray default-padding bottom-less">
+        <div class="doctor-area carousel-shadow default-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
@@ -766,122 +541,229 @@
                         </div>
                     </div>
                 </div>
-                <div class="doctor-items text-center">
-                    <div class="row">
-                        <!-- Single Item -->
-                        <div class="col-lg-4 col-md-6 equal-height">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
-                                    <div class="overlay">
-                                        <a href="index.html"></a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div
+                            class="doctor-items doctor-carousel owl-carousel owl-theme text-center owl-loaded owl-drag"
+                        >
+                            <!-- Single Item -->
+
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+
+                            <!-- End Single Item -->
+                            <div class="owl-stage-outer">
+                                <div
+                                    class="owl-stage"
+                                    style="transform: translate3d(-2292px, 0px, 0px); transition: 0.25s; width: 4202px"
+                                >
+                                    <div class="owl-item cloned" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Rakesh Patil</h4>
+                                                <h5>Cosmetic Surgeon</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Shirish Kannur</h4>
+                                                <h5>Dental surgeon</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Rakesh Patil</h4>
+                                                <h5>Cosmetic Surgeon</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Ramachandra Sonavale</h4>
+                                                <h5>Cardiologist</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Shirish Kannur</h4>
+                                                <h5>Dental surgeon</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Rakesh Patil</h4>
+                                                <h5>Cosmetic Surgeon</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item active" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Shirish Kannur</h4>
+                                                <h5>Dental surgeon</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item active" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Rakesh Patil</h4>
+                                                <h5>Cosmetic Surgeon</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned active" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Ramachandra Sonavale</h4>
+                                                <h5>Cardiologist</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Shirish Kannur</h4>
+                                                <h5>Dental surgeon</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 352px; margin-right: 30px">
+                                        <div class="item">
+                                            <div class="thumb">
+                                                <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
+                                                <div class="overlay">
+                                                    <a href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h4>Rakesh Patil</h4>
+                                                <h5>Cosmetic Surgeon</h5>
+                                                <div class="appoinment-btn">
+                                                    <a href="doctor-details.html">Make Appointment</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="info">
-                                    <h4>Ramachandra Sonavale</h4>
-                                    <h5>Cardiologist</h5>
-                                   <div class="appoinment-btn">
-    <a href="doctor-details.html">Make Appointment</a>
-</div>
-                                </div>
                             </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="col-lg-4 col-md-6 equal-height">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
-                                    <div class="overlay">
-                                        <a href="index.html"></a>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h4>Shirish Kannur</h4>
-                                    <h5>Dental surgeon</h5>
-                                   <div class="appoinment-btn">
-    <a href="doctor-details.html">Make Appointment</a>
-</div>
-                                </div>
+                            <div class="owl-nav disabled">
+                                <button type="button" role="presentation" class="owl-prev">
+                                    <i class="fa fa-angle-left"></i></button
+                                ><button type="button" role="presentation" class="owl-next">
+                                    <i class="fa fa-angle-right"></i>
+                                </button>
                             </div>
+                            <div class="owl-dots disabled"></div>
                         </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="col-lg-4 col-md-6 equal-height">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
-                                    <div class="overlay">
-                                        <a href="index.html"></a>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h4>Rakesh Patil</h4>
-                                    <h5>Cosmetic Surgeon</h5>
-                                   <div class="appoinment-btn">
-    <a href="doctor-details.html">Make Appointment</a>
-</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="col-lg-4 col-md-6 equal-height">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
-                                    <div class="overlay">
-                                        <a href="index.html"></a>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h4>Ramachandra Sonavale</h4>
-                                    <h5>Cardiologist</h5>
-                                   <div class="appoinment-btn">
-    <a href="doctor-details.html">Make Appointment</a>
-</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="col-lg-4 col-md-6 equal-height">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
-                                    <div class="overlay">
-                                        <a href="index.html"></a>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h4>Shirish Kannur</h4>
-                                    <h5>Dental surgeon</h5>
-                                   <div class="appoinment-btn">
-    <a href="doctor-details.html">Make Appointment</a>
-</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="col-lg-4 col-md-6 equal-height">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/doctors/doctor.jpg" alt="Thumb" />
-                                    <div class="overlay">
-                                        <a href="index.html"></a>
-                                    </div>
-                                </div>
-                                <div class="info">
-                                    <h4>Rakesh Patil</h4>
-                                    <h5>Cosmetic Surgeon</h5>
-                                   <div class="appoinment-btn">
-    <a href="doctor-details.html">Make Appointment</a>
-</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
                     </div>
                 </div>
             </div>
@@ -1207,30 +1089,19 @@
                         <!-- Single Item -->
                         <div class="col-lg-3 col-md-6 equal-height item pl-50 pl-md-10 pl-xs-10">
                             <div class="f-item link">
-                                <h4>Our Depeartments</h4>
+                                <h4>Quick Links</h4>
                                 <ul>
-                                    <li>
-                                        <a href="index.html">Medecine and Health</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html">Dental Care and Surgery</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html">Eye Treatment</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html">Children Chare</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html">Nuclear magnetic</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html">Traumatology</a>
-                                    </li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="doctors.html">Our Doctors</a></li>
+                                    <li><a href="services.html">Our Specialties</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
                                 </ul>
                             </div>
                         </div>
                         <!-- End Single Item -->
+
                         <!-- Single Item -->
                         <div class="col-lg-3 col-md-6 equal-height item">
                             <div class="f-item">
@@ -1276,21 +1147,15 @@
                                         <i class="fas fa-envelope"></i>
                                         <p>
                                             Email
-                                            <span
-                                                ><a href="mailto:<span>
-    <a href="mailto:info@hospital.com">info@hospital.com</a>
-</span>"
-                                                    ><span>
-    <a href="mailto:info@hospital.com">info@hospital.com</a>
-</span></a
-                                                ></span
-                                            >
+                                            <span>
+                                                <a href="mailto:info@hospital.com">info@hospital.com</a>
+                                            </span>
                                         </p>
                                     </li>
                                     <li>
                                         <i class="fas fa-map"></i>
                                         <p>
-                                            Office
+                                            Address
                                             <span>
                                                 Near S-Hyper Mart, NH50,<br />
                                                 Vijayapura - 586 103
@@ -1309,7 +1174,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
-                            <p>© JSS Hospitals, Vijayapura. All Rights Reserved.</p>
+                            <p>© JSS Hospitals, All Rights Reserved.</p>
                         </div>
                         <div class="col-lg-6 text-end link">
                             <p>
