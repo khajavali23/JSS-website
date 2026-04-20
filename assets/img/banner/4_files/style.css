@@ -1,6 +1,6 @@
 /* ----------------------------------
 
-Template Name: JSS - Medical & Health Template
+Template Name: MediHub - Medical & Health Template
 Author: validtheme
 Description:
 Version: 2.0
@@ -49,7 +49,7 @@ Table of contents
 
 
 
-@import url('../../../fonts.googleapis.com/css2/family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap.css');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 /* Varialbes */
 :root {
@@ -60,7 +60,7 @@ Table of contents
 	--dark: #14457b;
 	--dark-secondary: #0d3c6f;
 	--white: #ffffff;
-	--color-primary: #15abb9;
+	--color-primary: #0cb8b6;
 	--color-secondary: #07d9d6;
 	--color-heading: #04000b;
 	--color-paragraph: #666666;
@@ -2585,7 +2585,7 @@ body,
   position: relative;
   height: 80px;
   width: 80px;
-  
+  display: inline-block;
   left: 0;
   top: 0;
   line-height: 80px;
@@ -5059,6 +5059,7 @@ body,
   position: absolute;
   left: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 160%) repeat scroll 0 0;
   content: "";
   height: 30%;
   width: 100%;
@@ -5580,8 +5581,8 @@ body,
 }
 
 .testimonial-items .provider img {
-  height: 55px;
-  width: 55px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
 }
 
@@ -5667,7 +5668,6 @@ body,
   overflow: hidden;
   position: relative;
   z-index: 1;
-  border-radius: 20px;
 }
 
 .blog-area .thumb .post-type {
@@ -7237,117 +7237,4 @@ footer .footer-bottom .social li a:hover {
   z-index: 999999;
   background: url(assets/img/preloader.gif) center no-repeat #fff;
   text-align: center;
-}
-
-.banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.3)
-    );
-    z-index: 1;
-}
-
-
-.appointment-modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(6px);
-}
-
-.appointment-content {
-    background: #fff;
-    margin: 5% auto;
-    padding: 0px;
-    width: 600px;
-    max-width: 90%;
-    border-radius: 10px;
-    position: relative;
-}
-
-.close-btn {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    font-size: 26px;
-    cursor: pointer;
-}
-.doctor_details_img{
- border-radius: 30px;
-}
-.doctor_details_submit_btn{
-  background: transparent;
-    padding: 13px 35px;
-    margin-top: 15px;
-    font-family: var(--font-default);
-    text-transform: capitalize;
-    font-weight: 600;
-    border: 2px solid transparent;
-    transition: all 0.35s ease-in-out;
-    color: var(--color-heading);
-    border: 2px solid var(--color-primary);
-    background: transparent;
-    border-radius: 30px;
-  
-}
-
-.appointment-modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(6px);
-    background: rgba(0,0,0,0.6);
-}
-
-
-
-.close-btn {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    font-size: 25px;
-    cursor: pointer;
-}
-.health_checkup_btn{
- padding: 11px 50px;
-}
-
-.blog-items .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.blog-items .single-item {
-    display: flex;
-}
-
-.blog-items .item {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.blog-items .info {
-    flex: 1;
-}
-.blog-items .single-item {
-    margin-bottom: 30px;
-}
-.blog-items h4 {
-    min-height: 60px !important;
 }
